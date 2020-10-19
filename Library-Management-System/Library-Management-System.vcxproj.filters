@@ -10,13 +10,13 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="lib_json\json_reader.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\lib_json</Filter>
     </ClCompile>
     <ClCompile Include="lib_json\json_value.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\lib_json</Filter>
     </ClCompile>
     <ClCompile Include="lib_json\json_writer.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\lib_json</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -39,6 +39,12 @@
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
       <ParseFiles>true</ParseFiles>
     </Filter>
+    <Filter Include="Header Files\lib_json">
+      <UniqueIdentifier>{a9e9f5e5-59fd-44ad-ac5d-fd653efd9f18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib_json">
+      <UniqueIdentifier>{f76b8637-680d-410e-a323-c20715cf6293}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="People.h">
@@ -48,42 +54,42 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="lib_json\allocator.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\lib_json</Filter>
     </ClInclude>
     <ClInclude Include="lib_json\assertions.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\lib_json</Filter>
     </ClInclude>
     <ClInclude Include="lib_json\config.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\lib_json</Filter>
     </ClInclude>
     <ClInclude Include="lib_json\forwards.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\lib_json</Filter>
     </ClInclude>
     <ClInclude Include="lib_json\json.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\lib_json</Filter>
     </ClInclude>
     <ClInclude Include="lib_json\json_features.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\lib_json</Filter>
     </ClInclude>
     <ClInclude Include="lib_json\json_tool.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\lib_json</Filter>
     </ClInclude>
     <ClInclude Include="lib_json\reader.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\lib_json</Filter>
     </ClInclude>
     <ClInclude Include="lib_json\value.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\lib_json</Filter>
     </ClInclude>
     <ClInclude Include="lib_json\version.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\lib_json</Filter>
     </ClInclude>
     <ClInclude Include="lib_json\writer.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\lib_json</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="lib_json\json_valueiterator.inl">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\lib_json</Filter>
     </None>
   </ItemGroup>
 </Project>

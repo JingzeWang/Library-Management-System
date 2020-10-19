@@ -23,7 +23,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
@@ -80,12 +80,15 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>false</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Book.cpp" />
+    <ClCompile Include="lib_json\json_reader.cpp" />
+    <ClCompile Include="lib_json\json_value.cpp" />
+    <ClCompile Include="lib_json\json_writer.cpp" />
     <ClCompile Include="People.cpp" />
     <QtRcc Include="LibraryManagementSystem.qrc" />
     <QtUic Include="LibraryManagementSystem.ui" />
@@ -95,7 +98,21 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Book.h" />
+    <ClInclude Include="lib_json\allocator.h" />
+    <ClInclude Include="lib_json\assertions.h" />
+    <ClInclude Include="lib_json\config.h" />
+    <ClInclude Include="lib_json\forwards.h" />
+    <ClInclude Include="lib_json\json.h" />
+    <ClInclude Include="lib_json\json_features.h" />
+    <ClInclude Include="lib_json\json_tool.h" />
+    <ClInclude Include="lib_json\reader.h" />
+    <ClInclude Include="lib_json\value.h" />
+    <ClInclude Include="lib_json\version.h" />
+    <ClInclude Include="lib_json\writer.h" />
     <ClInclude Include="People.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib_json\json_valueiterator.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

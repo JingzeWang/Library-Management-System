@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>imag/borrow.png</file>
+        <file>imag/return.png</file>
+        <file>imag/search.png</file>
+        <file>imag/img.png</file>
+        <file>imag/background.jpg</file>
+        <file>imag/1.png</file>
+        <file>imag/log.png</file>
+        <file>imag/b1.png</file>
+        <file>imag/b2.png</file>
+        <file>imag/p1.png</file>
+        <file>imag/code.png</file>
+        <file>imag/p3.png</file>
+        <file>imag/pay.png</file>
+        <file>imag/p2.png</file>
+        <file>imag/b3.png</file>
+        <file>imag/bo1.png</file>
+        <file>imag/bo2.png</file>
+        <file>imag/bo3.png</file>
+    </qresource>
+</RCC>

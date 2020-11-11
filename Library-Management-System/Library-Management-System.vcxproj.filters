@@ -1,14 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="LibraryManagementSystem.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="People.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Book.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="lib_json\json_reader.cpp">
       <Filter>Source Files\lib_json</Filter>
     </ClCompile>
@@ -18,15 +10,117 @@
     <ClCompile Include="lib_json\json_writer.cpp">
       <Filter>Source Files\lib_json</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <QtMoc Include="LibraryManagementSystem.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <QtRcc Include="LibraryManagementSystem.qrc" />
-  </ItemGroup>
-  <ItemGroup>
-    <QtUic Include="LibraryManagementSystem.ui" />
+    <ClCompile Include="DataBase\db_terminal.cpp">
+      <Filter>Source Files\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\file_handle.cpp">
+      <Filter>Source Files\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\file_info.cpp">
+      <Filter>Source Files\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\index_manager.cpp">
+      <Filter>Source Files\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\interpreter.cpp">
+      <Filter>Source Files\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\minidb_api.cpp">
+      <Filter>Source Files\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\record_manager.cpp">
+      <Filter>Source Files\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\sql_statement.cpp">
+      <Filter>Source Files\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\block_handle.cpp">
+      <Filter>Source Files\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\block_info.cpp">
+      <Filter>Source Files\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\buffer_manager.cpp">
+      <Filter>Source Files\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\catalog_manager.cpp">
+      <Filter>Source Files\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="interface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="myinformation.cpp">
+      <Filter>Source Files\Qt Files</Filter>
+    </ClCompile>
+    <ClCompile Include="payfine.cpp">
+      <Filter>Source Files\Qt Files</Filter>
+    </ClCompile>
+    <ClCompile Include="searchborrower.cpp">
+      <Filter>Source Files\Qt Files</Filter>
+    </ClCompile>
+    <ClCompile Include="testmethod.cpp">
+      <Filter>Source Files\Qt Files</Filter>
+    </ClCompile>
+    <ClCompile Include="widget.cpp">
+      <Filter>Source Files\Qt Files</Filter>
+    </ClCompile>
+    <ClCompile Include="librariandeletebook.cpp">
+      <Filter>Source Files\Qt Files</Filter>
+    </ClCompile>
+    <ClCompile Include="librariandialog.cpp">
+      <Filter>Source Files\Qt Files</Filter>
+    </ClCompile>
+    <ClCompile Include="librarianmodifybook.cpp">
+      <Filter>Source Files\Qt Files</Filter>
+    </ClCompile>
+    <ClCompile Include="librarianaddbook.cpp">
+      <Filter>Source Files\Qt Files</Filter>
+    </ClCompile>
+    <ClCompile Include="addborrower.cpp">
+      <Filter>Source Files\Qt Files</Filter>
+    </ClCompile>
+    <ClCompile Include="borrowerdialog.cpp">
+      <Filter>Source Files\Qt Files</Filter>
+    </ClCompile>
+    <ClCompile Include="borrowerdialog_1.cpp">
+      <Filter>Source Files\Qt Files</Filter>
+    </ClCompile>
+    <ClCompile Include="borrowerinformation.cpp">
+      <Filter>Source Files\Qt Files</Filter>
+    </ClCompile>
+    <ClCompile Include="changecode.cpp">
+      <Filter>Source Files\Qt Files</Filter>
+    </ClCompile>
+    <ClCompile Include="changecodebyid.cpp">
+      <Filter>Source Files\Qt Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cJSON.c">
+      <Filter>Source Files\Qt Files</Filter>
+    </ClCompile>
+    <ClCompile Include="currentborrow.cpp">
+      <Filter>Source Files\Qt Files</Filter>
+    </ClCompile>
+    <ClCompile Include="deleteborrower.cpp">
+      <Filter>Source Files\Qt Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialogborrow.cpp">
+      <Filter>Source Files\Qt Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialogreturn.cpp">
+      <Filter>Source Files\Qt Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialogsearch.cpp">
+      <Filter>Source Files\Qt Files</Filter>
+    </ClCompile>
+    <ClCompile Include="historyborrow.cpp">
+      <Filter>Source Files\Qt Files</Filter>
+    </ClCompile>
+    <ClCompile Include="timedeal.cpp">
+      <Filter>Source Files\Qt Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
@@ -45,14 +139,14 @@
     <Filter Include="Source Files\lib_json">
       <UniqueIdentifier>{f76b8637-680d-410e-a323-c20715cf6293}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\DataBase">
+      <UniqueIdentifier>{4e36b528-bf29-4451-a293-0d38dd0d7969}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Qt Files">
+      <UniqueIdentifier>{93c1e8d4-f1d7-459c-aad2-694a288c8575}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="People.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Book.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="lib_json\allocator.h">
       <Filter>Header Files\lib_json</Filter>
     </ClInclude>
@@ -86,10 +180,196 @@
     <ClInclude Include="lib_json\writer.h">
       <Filter>Header Files\lib_json</Filter>
     </ClInclude>
+    <ClInclude Include="DataBase\commons.h">
+      <Filter>Source Files\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\exceptions.h">
+      <Filter>Source Files\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\file_handle.h">
+      <Filter>Source Files\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\file_info.h">
+      <Filter>Source Files\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\index_manager.h">
+      <Filter>Source Files\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\interpreter.h">
+      <Filter>Source Files\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\minidb_api.h">
+      <Filter>Source Files\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\record_manager.h">
+      <Filter>Source Files\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\sql_statement.h">
+      <Filter>Source Files\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\block_handle.h">
+      <Filter>Source Files\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\block_info.h">
+      <Filter>Source Files\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\buffer_manager.h">
+      <Filter>Source Files\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\catalog_manager.h">
+      <Filter>Source Files\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="testh.h">
+      <Filter>Source Files\Qt Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cJSON.h">
+      <Filter>Source Files\Qt Files</Filter>
+    </ClInclude>
+    <ClInclude Include="timedeal.h">
+      <Filter>Source Files\Qt Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="lib_json\json_valueiterator.inl">
       <Filter>Header Files\lib_json</Filter>
     </None>
+    <None Include="BookManagement0.pro">
+      <Filter>Source Files\Qt Files</Filter>
+    </None>
+    <None Include="BookManagement0.pro.user">
+      <Filter>Source Files\Qt Files</Filter>
+    </None>
+    <None Include="BookManagement0.pro_1.user">
+      <Filter>Source Files\Qt Files</Filter>
+    </None>
+    <None Include="BookManagement0_1.pro">
+      <Filter>Source Files\Qt Files</Filter>
+    </None>
+    <None Include="BookManagement0_1.pro.user">
+      <Filter>Source Files\Qt Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="myinformation.h">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtMoc>
+    <QtMoc Include="payfine.h">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtMoc>
+    <QtMoc Include="searchborrower.h">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtMoc>
+    <QtMoc Include="widget.h">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtMoc>
+    <QtMoc Include="librarianaddbook.h">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtMoc>
+    <QtMoc Include="librariandeletebook.h">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtMoc>
+    <QtMoc Include="librariandialog.h">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtMoc>
+    <QtMoc Include="librarianmodifybook.h">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtMoc>
+    <QtMoc Include="addborrower.h">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtMoc>
+    <QtMoc Include="borrowerdialog.h">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtMoc>
+    <QtMoc Include="borrowerinformation.h">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtMoc>
+    <QtMoc Include="changecode.h">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtMoc>
+    <QtMoc Include="changecodebyid.h">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtMoc>
+    <QtMoc Include="currentborrow.h">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtMoc>
+    <QtMoc Include="deleteborrower.h">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtMoc>
+    <QtMoc Include="dialogborrow.h">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtMoc>
+    <QtMoc Include="dialogreturn.h">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtMoc>
+    <QtMoc Include="dialogsearch.h">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtMoc>
+    <QtMoc Include="historyborrow.h">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="myinformation.ui">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtUic>
+    <QtUic Include="payfine.ui">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtUic>
+    <QtUic Include="searchborrower.ui">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtUic>
+    <QtUic Include="widget.ui">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtUic>
+    <QtUic Include="librarianaddbook.ui">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtUic>
+    <QtUic Include="librariandeletebook.ui">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtUic>
+    <QtUic Include="librariandialog.ui">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtUic>
+    <QtUic Include="librarianmodifybook.ui">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtUic>
+    <QtUic Include="addborrower.ui">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtUic>
+    <QtUic Include="borrowerdialog.ui">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtUic>
+    <QtUic Include="borrowerinformation.ui">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtUic>
+    <QtUic Include="changecode.ui">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtUic>
+    <QtUic Include="changecodebyid.ui">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtUic>
+    <QtUic Include="currentborrow.ui">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtUic>
+    <QtUic Include="deleteborrower.ui">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtUic>
+    <QtUic Include="dialogborrow.ui">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtUic>
+    <QtUic Include="dialogreturn.ui">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtUic>
+    <QtUic Include="dialogsearch.ui">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtUic>
+    <QtUic Include="historyborrow.ui">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="resources.qrc">
+      <Filter>Source Files\Qt Files</Filter>
+    </QtRcc>
   </ItemGroup>
 </Project>

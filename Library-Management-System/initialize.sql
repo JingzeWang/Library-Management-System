@@ -69,13 +69,3 @@ create table BookID(
 insert into PeopleID values ('n', '0000000000000000000');
 insert into BookID values ('n', '00000000000000000000');
 insert into PeopleInfo values('l0000000000000000000', 0, 'dzz', 20, 'm', '123');
-	use LibraryManagementSystem;
-	insert into Book values('00000000000000000079', '00000000000100000000', '0', 0, 0, '0', '0');
-	insert into Book values('00000000000000000023', '1234567890123456789', '0', 0, 0, '0', '0');
-	select * from BookInfo;
-	select * from PeopleInfo where id = "l0000000000000000000" and password = "12";
-	0000000000000000008 123
-	b0000000000000000008
-	00000000000000003714
-	1234567890123456789
-	0000000000000002000

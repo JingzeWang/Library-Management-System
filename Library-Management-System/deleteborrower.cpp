@@ -7,7 +7,7 @@ deleteBorrower::deleteBorrower(QWidget* parent) :
 	ui(new Ui::deleteBorrower)
 {
 	ui->setupUi(this);
-	QRegExp name("[a-z0-9]{20}");
+	QRegExp name("[bl0-9]{20}");
 	ui->lineEdit->setValidator(new QRegExpValidator(name, this));
 	setWindowTitle("删除借阅者");
 	ui->okButton->setEnabled(false);//隐藏按钮

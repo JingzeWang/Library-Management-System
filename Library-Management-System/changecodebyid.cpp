@@ -21,7 +21,7 @@ changeCodeById::changeCodeById(QWidget* parent) :
 	ui->lineEdit_3->setMaxLength(15);
 	ui->lineEdit_4->setMaxLength(20);
 
-	QRegExp rid("[a-z0-9]{20,20}");
+	QRegExp rid("[bl0-9]{20,20}");
 	QRegExp rcode("[a-zA-Z0-9]{1,15}");
 
 	//ui->lineEdit->setValidator(new QRegExpValidator(rcode, this));//oldCode

@@ -6,7 +6,7 @@ searchBorrower::searchBorrower(QWidget* parent) :
 	ui(new Ui::searchBorrower)
 {
 	ui->setupUi(this);
-	QRegExp name("[a-z0-9]{20}");
+	QRegExp name("[bl0-9]{20}");
 	ui->lineEdit->setValidator(new QRegExpValidator(name, this));
 	setWindowTitle("查询借阅者");
 	//ui->pushButton->setEnabled(false);

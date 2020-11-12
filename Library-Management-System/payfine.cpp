@@ -17,7 +17,7 @@ payFine::payFine(QWidget* parent) :
 	ui->lineEdit_2->setMaxLength(8);
 
 	//id固定长度为20位：
-	QRegExp rid("[a-z0-9]{20,20}");
+	QRegExp rid("[bl0-9]{20,20}");
 	//罚款的格式限制：
 	QRegExp rfine("[-0-9]{1,8}");
 

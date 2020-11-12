@@ -53,7 +53,7 @@ MyInformation::MyInformation(QWidget* parent) :
 		QString nameTemp = QString::fromStdString(name);
 		//int转换为QString:
 		QString ageTemp = QString::number(age, 10);
-		QString moneyTemp = QString::number(money, 10);
+		QString moneyTemp = QString::number(-money, 10);
 
 		//float转换为QString:
 		//float realFineNum=(float)money/(float)100;
@@ -66,12 +66,12 @@ MyInformation::MyInformation(QWidget* parent) :
 		ui->lineEdit_2->setReadOnly(true);
 		if (gender == 'w')
 		{
-			ui->lineEdit_3->setText("w");
+			ui->lineEdit_3->setText("女");
 			ui->lineEdit_3->setReadOnly(true);
 		}
 		else if (gender == 'm')
 		{
-			ui->lineEdit_3->setText("m");
+			ui->lineEdit_3->setText("男");
 			ui->lineEdit_3->setReadOnly(true);
 		}
 		ui->label_11->setText(moneyTemp);
@@ -190,6 +190,15 @@ void MyInformation::on_pushButton_2_clicked()//确认修改
 
 		if (flag == 0)
 		{
+			if (gender == 'w') {
+				ui->lineEdit_3->setText("女");
+			}
+			else {
+				ui->lineEdit_3->setText("男");
+			}
+			QMessageBox m;
+			m.setText("修改成功");
+			m.exec();
 			ui->pushButton_2->setEnabled(false);
 			//修改完成后变成只读状态：
 			ui->lineEdit->setReadOnly(true);

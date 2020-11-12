@@ -13,7 +13,7 @@ DialogReturn::DialogReturn(QWidget* parent) :
 {
 	ui->setupUi(this);
 	ui->lineEdit->setMaxLength(20);
-	QRegExp rx2("[a-zA-Z0-9\-]{1,20}");
+	QRegExp rx2("[0-9]{1,20}");
 	ui->lineEdit->setValidator(new QRegExpValidator(rx2, this));
 	ui->tableWidget->horizontalHeader()->setSectionResizeMode(0, QHeaderView::ResizeToContents);
 	ui->tableWidget->horizontalHeader()->setStretchLastSection(true);
@@ -30,7 +30,7 @@ void DialogReturn::on_pushButton_clicked()//归还前的查询
 	//空
 	if (ui->lineEdit->text().isEmpty())
 	{
-		QMessageBox::information(this, "提示", "请输入查找id");
+		QMessageBox::information(this, "提示", "请输入查找ID");
 		return;
 	}
 	else {
@@ -48,13 +48,13 @@ void DialogReturn::on_pushButton_clicked()//归还前的查询
 
 	if (ifsuccessful == 0)
 	{
-		QMessageBox::information(this, "提示", "无此结果");
+		QMessageBox::information(this, "提示", "查无此书");
 		return;
 	}
 	else
 	{
-		if (_isBorrowed == 1)isborrowed_t = "被借阅中";
-		else isborrowed_t = "未被借阅";
+		if (_isBorrowed == 1)isborrowed_t = "已借出";
+		else isborrowed_t = "可借阅";
 
 
 		//注意这里要设置不可更改表中内容
@@ -171,7 +171,8 @@ void DialogReturn::on_pushButton_2_clicked()//归还动作
 
 		if (_isBorrowed == 0)
 		{
-			QMessageBox::information(this, "提示", "书已经归还");
+			QMessageBox::information(this, "提示", "书籍未借出");
+			return;
 		}
 
 		_isBorrowed = 0;
@@ -205,7 +206,7 @@ void DialogReturn::on_pushButton_2_clicked()//归还动作
 		int ifborrowid = getBorrowerID(_id, _borrowerID);
 		if (ifborrowid == 0)
 		{
-			QMessageBox::information(this, "提示", "这本书没有被借阅");
+			QMessageBox::information(this, "提示", "书籍未借出");
 			return;
 		}
 		else
@@ -222,6 +223,7 @@ void DialogReturn::on_pushButton_2_clicked()//归还动作
 
 			if (ifborrow == 1)
 			{
+				ui->tableWidget->setItem(0, 3, new QTableWidgetItem("可借阅"));
 				modifyBook(_id, _ISBN, "0", _hasBorrowedNum, _isBorrowed, _startBorrowTime, _startBorrowTime);
 				QMessageBox::information(this, "提示", "还书成功");
 			}

@@ -15,7 +15,7 @@ DialogBorrow::DialogBorrow(QWidget* parent) :
 {
 	ui->setupUi(this);
 	ui->lineEdit->setMaxLength(20);
-	QRegExp rx2("[a-zA-Z0-9\-]{1,20}");
+	QRegExp rx2("[0-9]{1,20}");
 	ui->lineEdit->setValidator(new QRegExpValidator(rx2, this));
 	ui->tableWidget->horizontalHeader()->setSectionResizeMode(0, QHeaderView::ResizeToContents);
 	ui->tableWidget->horizontalHeader()->setStretchLastSection(true);
@@ -40,7 +40,7 @@ void DialogBorrow::on_pushButton_clicked()//点击确定按钮查询书籍信息
 	//空
 	if (ui->lineEdit->text().isEmpty())
 	{
-		QMessageBox::information(this, "提示", "请输入查找id");
+		QMessageBox::information(this, "提示", "请输入查找ID");
 		return;
 	}
 	else {
@@ -58,12 +58,12 @@ void DialogBorrow::on_pushButton_clicked()//点击确定按钮查询书籍信息
 
 	if (ifsuccessful == 0)
 	{
-		QMessageBox::information(this, "提示", "无此结果");
+		QMessageBox::information(this, "提示", "查无此书");
 		return;
 	}
 	else
 	{
-		if (_isBorrowed == 1)isborrowed_t = "已借阅";
+		if (_isBorrowed == 1)isborrowed_t = "已借出";
 		else isborrowed_t = "可借阅";
 
 
@@ -172,14 +172,14 @@ void DialogBorrow::on_pushButton_2_clicked()
 		int ifsucc = searchBookById(_id, _ISBN, _hasBorrowedNum, _isBorrowed, _startBorrowTime, _shouldReturnTime, _name, _price, _type, _author, _pageNum, _wordNum);
 		if (ifsucc == 0)
 		{
-			QMessageBox::information(this, "提示", "未查询成功，请重新查询");
+			QMessageBox::information(this, "提示", "查询失败，请重新查询");
 			return;
 		}
 
 		_hasBorrowedNum++;
 		if (_isBorrowed == 1)
 		{
-			QMessageBox::information(this, "提示", "书被借阅不可操作");
+			QMessageBox::information(this, "提示", "该书已经借出");
 			return;
 		}
 		_isBorrowed = 1;
@@ -219,6 +219,7 @@ void DialogBorrow::on_pushButton_2_clicked()
 		}
 		else if (ifborrow == 1)
 		{
+			ui->tableWidget->setItem(0, 2, new QTableWidgetItem("可借阅"));
 			modifyBook(_id, _ISBN, userid, _hasBorrowedNum, _isBorrowed, _startBorrowTime, _shouldReturnTime);
 			QMessageBox::information(this, "提示", "借阅成功！");
 		}

@@ -4,19 +4,19 @@
 #include <QDialog>
 
 namespace Ui {
-class borrowerInformation;
+	class borrowerInformation;
 }
 
 class borrowerInformation : public QDialog
 {
-    Q_OBJECT
+	Q_OBJECT
 
 public:
-    explicit borrowerInformation(QWidget *parent = 0);
-    ~borrowerInformation();
+	explicit borrowerInformation(QWidget* parent = 0);
+	~borrowerInformation();
 
 private:
-    Ui::borrowerInformation *ui;
+	Ui::borrowerInformation* ui;
 };
 
 #endif // BORROWERINFORMATION_H

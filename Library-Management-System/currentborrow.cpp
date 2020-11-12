@@ -10,7 +10,7 @@ currentborrow::currentborrow(QWidget* parent) :
 {
 	ui->setupUi(this);
 	//ui->tableWidget->horizontalHeader()->setSectionResizeMode(0, QHeaderView::ResizeToContents);
-	
+
 	//补充：通过id导入数据库里的当前借阅list？？？
 
 	/*

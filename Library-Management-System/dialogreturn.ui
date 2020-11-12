@@ -87,7 +87,7 @@
    </row>
    <column>
     <property name="text">
-     <string>书籍id</string>
+     <string>书籍ID</string>
     </property>
    </column>
    <column>

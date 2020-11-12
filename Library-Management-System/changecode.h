@@ -4,22 +4,22 @@
 #include <QDialog>
 
 namespace Ui {
-class changecode;
+	class changecode;
 }
 
 class changecode : public QDialog
 {
-    Q_OBJECT
+	Q_OBJECT
 
 public:
-    explicit changecode(QWidget *parent = 0);
-    ~changecode();
+	explicit changecode(QWidget* parent = 0);
+	~changecode();
 
 private slots:
-    void on_pushButton_clicked();
+	void on_pushButton_clicked();
 
 private:
-    Ui::changecode *ui;
+	Ui::changecode* ui;
 };
 
 #endif // CHANGECODE_H

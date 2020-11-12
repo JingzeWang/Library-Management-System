@@ -264,10 +264,6 @@
     <ClCompile Include="dialogreturn.cpp" />
     <ClCompile Include="dialogsearch.cpp" />
     <ClCompile Include="historyborrow.cpp" />
-    <ClCompile Include="interface.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Terminal|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="librarianaddbook.cpp" />
     <ClCompile Include="librariandeletebook.cpp" />
     <ClCompile Include="librariandialog.cpp" />

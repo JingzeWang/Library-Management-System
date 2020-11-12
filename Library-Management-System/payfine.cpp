@@ -19,7 +19,7 @@ payFine::payFine(QWidget* parent) :
 	//id固定长度为20位：
 	QRegExp rid("[a-z0-9]{20,20}");
 	//罚款的格式限制：
-	QRegExp rfine("[\\-0-9]{1,8}");
+	QRegExp rfine("[-0-9]{1,8}");
 
 	ui->lineEdit->setValidator(new QRegExpValidator(rid, this));//id
 	ui->lineEdit_2->setValidator(new QRegExpValidator(rfine, this));//fine
@@ -76,7 +76,7 @@ void payFine::on_pushButton_clicked()//确定-缴纳罚款
 		//【修改添加】对该账号的money进行修改
 		//int payMoney(string id, int pay_, int &money)缴纳钱数pay，对money进行修改，获得缴纳后的当前money记录
 		//1：成功 0：失败（<0表示账号有存款）
-		if(realMoney) payMoney(s1.toStdString(), realMoney, money);
+		if (realMoney) payMoney(s1.toStdString(), realMoney, money);
 
 		//参数传递检测：
 		//ui->label_5->setText("检测：pay-"+QString::number(realMoney,10)+"money-"+QString::number(money,10));

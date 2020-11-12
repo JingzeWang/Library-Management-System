@@ -74,7 +74,7 @@
    </row>
    <column>
     <property name="text">
-     <string>id</string>
+     <string>ID</string>
     </property>
    </column>
    <column>
@@ -89,7 +89,7 @@
    </column>
    <column>
     <property name="text">
-     <string>isbn</string>
+     <string>ISBN</string>
     </property>
    </column>
   </widget>

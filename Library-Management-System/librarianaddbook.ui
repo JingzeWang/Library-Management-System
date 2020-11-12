@@ -54,7 +54,7 @@ p, li { white-space: pre-wrap; }
    </column>
    <column>
     <property name="text">
-     <string>*isbn</string>
+     <string>*ISBN</string>
     </property>
    </column>
    <column>
@@ -143,7 +143,7 @@ p, li { white-space: pre-wrap; }
    </property>
    <column>
     <property name="text">
-     <string>id</string>
+     <string>ID</string>
     </property>
    </column>
    <column>

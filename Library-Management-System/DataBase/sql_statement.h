@@ -92,9 +92,9 @@ public:
 	bool operator>(const TKey t1) {
 		switch (t1.key_type_) {
 		case 0:
-			return *(int*)key_ > * (int*)t1.key_;
+			return *(int*)key_ > *(int*)t1.key_;
 		case 1:
-			return *(float*)key_ > * (float*)t1.key_;
+			return *(float*)key_ > *(float*)t1.key_;
 		case 2:
 			return (strncmp(key_, t1.key_, length_) > 0);
 		default:

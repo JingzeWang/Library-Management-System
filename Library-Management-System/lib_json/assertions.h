@@ -19,7 +19,7 @@
  */
 #if JSON_USE_EXCEPTION
 
-// @todo <= add detail about condition in exception
+ // @todo <= add detail about condition in exception
 #define JSON_ASSERT(condition)                                                 \
   do {                                                                         \
     if (!(condition)) {                                                        \
@@ -39,8 +39,8 @@
 
 #define JSON_ASSERT(condition) assert(condition)
 
-// The call to assert() will show the failure message in debug builds. In
-// release builds we abort, for a core-dump or debugger.
+ // The call to assert() will show the failure message in debug builds. In
+ // release builds we abort, for a core-dump or debugger.
 #define JSON_FAIL_MESSAGE(message)                                             \
   {                                                                            \
     OStringStream oss;                                                         \

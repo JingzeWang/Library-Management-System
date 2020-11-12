@@ -125,7 +125,7 @@ font: 11pt &quot;华文新魏&quot;;</string>
     </rect>
    </property>
    <property name="text">
-    <string>欠款额度：</string>
+    <string>当前余额：</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_2">

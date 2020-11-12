@@ -10,7 +10,7 @@ librariandeletebook::librariandeletebook(QWidget* parent) :
 {
 	ui->setupUi(this);
 	ui->lineEdit_4->setMaxLength(20);
-	QRegExp rx2("[a-zA-Z0-9\-]{1,20}");
+	QRegExp rx2("[0-9]{1,20}");
 	ui->lineEdit_4->setValidator(new QRegExpValidator(rx2, this));
 	ui->tableWidget->horizontalHeader()->setSectionResizeMode(0, QHeaderView::ResizeToContents);
 	ui->tableWidget->horizontalHeader()->setStretchLastSection(true);
@@ -95,7 +95,7 @@ void librariandeletebook::on_pushButton_2_clicked()
 	else
 	{
 		deleteBook(_id);
-		QMessageBox::information(this, "提示", "delete successfully");
+		QMessageBox::information(this, "提示", "删除成功");
 		ui->tableWidget->clearContents();
 	}
 }

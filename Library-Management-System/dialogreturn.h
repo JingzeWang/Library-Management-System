@@ -4,23 +4,23 @@
 #include <QDialog>
 
 namespace Ui {
-class DialogReturn;
+	class DialogReturn;
 }
 
 class DialogReturn : public QDialog
 {
-    Q_OBJECT
+	Q_OBJECT
 
 public:
-    explicit DialogReturn(QWidget *parent = 0);
-    ~DialogReturn();
+	explicit DialogReturn(QWidget* parent = 0);
+	~DialogReturn();
 
 private slots:
-    void on_pushButton_clicked();
-    void on_pushButton_2_clicked();
+	void on_pushButton_clicked();
+	void on_pushButton_2_clicked();
 
 private:
-    Ui::DialogReturn *ui;
+	Ui::DialogReturn* ui;
 };
 
 #endif // DIALOGRETURN_H

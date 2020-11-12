@@ -152,5 +152,3 @@ int comput(std::string borrowtime, std::string& shouldbacktime)
 	shouldbacktime = syear + '-' + smonth + '-' + sday;
 	return 0;
 }
-
-

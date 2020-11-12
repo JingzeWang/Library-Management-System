@@ -4,19 +4,19 @@
 #include <QDialog>
 
 namespace Ui {
-class historyborrow;
+	class historyborrow;
 }
 
 class historyborrow : public QDialog
 {
-    Q_OBJECT
+	Q_OBJECT
 
 public:
-    explicit historyborrow(QWidget *parent = 0);
-    ~historyborrow();
+	explicit historyborrow(QWidget* parent = 0);
+	~historyborrow();
 
 private:
-    Ui::historyborrow *ui;
+	Ui::historyborrow* ui;
 };
 
 #endif // HISTORYBORROW_H

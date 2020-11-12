@@ -57,7 +57,7 @@ font: 11pt &quot;华文新魏&quot;;</string>
     </rect>
    </property>
    <property name="text">
-    <string>isbn *</string>
+    <string>ISBN *</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_4">
@@ -211,7 +211,7 @@ font: 11pt &quot;华文新魏&quot;;</string>
     </rect>
    </property>
    <property name="text">
-    <string>请输入你要修改的书籍isbn</string>
+    <string>请输入你要修改的书籍ISBN</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton">
@@ -263,7 +263,7 @@ font: 11pt &quot;华文新魏&quot;;</string>
     </rect>
    </property>
    <property name="text">
-    <string>isbn:</string>
+    <string>ISBN:</string>
    </property>
   </widget>
  </widget>

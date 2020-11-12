@@ -98,7 +98,7 @@ historyborrow::historyborrow(QWidget* parent) :
 			}
 
 		}
-		
+
 	}
 
 }

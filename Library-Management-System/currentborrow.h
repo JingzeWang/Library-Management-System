@@ -4,19 +4,19 @@
 #include <QDialog>
 
 namespace Ui {
-class currentborrow;
+	class currentborrow;
 }
 
 class currentborrow : public QDialog
 {
-    Q_OBJECT
+	Q_OBJECT
 
 public:
-    explicit currentborrow(QWidget *parent = 0);
-    ~currentborrow();
+	explicit currentborrow(QWidget* parent = 0);
+	~currentborrow();
 
 private:
-    Ui::currentborrow *ui;
+	Ui::currentborrow* ui;
 };
 
 #endif // CURRENTBORROW_H
